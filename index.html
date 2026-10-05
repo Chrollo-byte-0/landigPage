@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Isaías — Portafolio</title>
+<meta name="description" content="Estudiante de ingeniería enfocado en fusionar matemáticas y tecnología para desarrollar software estructurado y soluciones eficientes en bases de datos.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#F2F2F2;--fg:#2B2B2B;--muted:#666666;--line:#DADADA;--teal:#5EC8C0;--coral:#F46B74;--lime:#CBE07E;--char:#4D4D4D;--on:#2B2B2B;--light:#F2F2F2;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#1D1D1F;--fg:#F2F2F2;--muted:#A8A8A8;--line:#343437}}
+:root[data-theme="dark"]{--bg:#1D1D1F;--fg:#F2F2F2;--muted:#A8A8A8;--line:#343437}
+html{scroll-behavior:smooth;scroll-padding-top:env(safe-area-inset-top,0px)}
+*,*::before,*::after{box-sizing:inherit}
+body{margin:0;background:var(--bg);color:var(--fg);font:17px/1.65 'DM Sans',system-ui,sans-serif}
+h1,h2,h3{font-family:'Bricolage Grotesque','DM Sans',system-ui,sans-serif;margin:0;line-height:1.05}
+a{color:inherit;text-decoration:none}
+:focus-visible{outline:3px solid var(--coral);outline-offset:3px;border-radius:6px}
+.wrap{max-width:1080px;margin:0 auto;padding:0 28px}
+nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--bg);border-bottom:1px solid var(--line)}
+nav .wrap{display:flex;justify-content:space-between;align-items:center;height:64px}
+nav b{font:800 1.2rem 'Bricolage Grotesque',sans-serif}
+nav ul{display:flex;gap:26px;list-style:none;margin:0;padding:0;font-size:.95rem;color:var(--muted)}
+nav ul a:hover{color:var(--fg)}
+.hero{padding:72px 0 88px}
+.hero .wrap{display:grid;grid-template-columns:1.25fr 1fr;gap:56px;align-items:center}
+h1{font-size:clamp(2.8rem,7.5vw,5.6rem);font-weight:800;letter-spacing:-.035em}
+.lead{color:var(--muted);font-size:1.2rem;max-width:44ch;margin:24px 0 36px}
+.btn{display:inline-block;padding:15px 28px;border-radius:14px;font-weight:500;background:var(--char);color:var(--light);transition:background .2s,color .2s}
+.btn:hover{background:var(--coral);color:var(--on)}
+.btn.alt{background:transparent;color:var(--fg);box-shadow:inset 0 0 0 2px var(--fg);margin-left:10px}
+.btn.alt:hover{background:var(--lime);color:var(--on);box-shadow:inset 0 0 0 2px var(--lime)}
+.art{display:grid;grid-template-columns:1fr 1fr;gap:12px;max-width:440px;justify-self:end;width:100%}.art>*{aspect-ratio:1;min-width:0;position:relative;overflow:hidden;color:var(--on)}.art svg{position:absolute;inset:0;width:100%;height:100%}
+.art>*{animation:pop .6s cubic-bezier(.2,.8,.2,1) both}
+.art>:nth-child(2){animation-delay:.08s}.art>:nth-child(3){animation-delay:.16s}.art>:nth-child(4){animation-delay:.24s}
+.art .a{background:var(--teal);border-radius:28px;display:grid;place-items:center;font:800 3.4rem 'Bricolage Grotesque',sans-serif;color:var(--on)}.art .a span{position:relative}
+.art .b{background:var(--coral);border-radius:50%}
+.art .c{background:var(--lime);border-radius:100% 0 0 0}
+.art .d{background:var(--char);border-radius:28px}
+@keyframes pop{from{opacity:0;transform:scale(.85)}to{opacity:1;transform:none}}
+section{padding:88px 0}
+h2{font-size:clamp(2rem,5vw,3.4rem);font-weight:800;letter-spacing:-.03em;margin-bottom:40px}
+.dark{background:var(--char);color:var(--light)}
+#sobre-mi .wrap{display:grid;grid-template-columns:1.2fr 1fr;gap:56px}
+.about p{margin:0 0 1em;max-width:54ch;font-size:1.1rem}
+.facts{list-style:none;margin:0;padding:0}@media (min-width:861px){.facts{margin-top:68px}}
+.facts li{display:flex;align-items:center;gap:16px;padding:16px 0;border-bottom:1px solid #6A6A6A}
+.facts li::before{content:"";width:14px;height:14px;border-radius:4px;background:var(--teal);flex:none}
+.facts li:nth-child(2)::before{background:var(--coral)}.facts li:nth-child(3)::before{background:var(--lime);border-radius:50%}
+.facts li:nth-child(4)::before{transform:rotate(45deg);border-radius:3px}.facts span{color:#BDBDBD;margin-left:auto;text-align:right}
+.projects{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.card{border-radius:24px;padding:28px;min-height:320px;display:flex;flex-direction:column;color:var(--on);transition:transform .25s}
+.card:hover{transform:translateY(-6px)}
+.card:nth-child(1){background:var(--teal)}.card:nth-child(2){background:var(--coral)}.card:nth-child(3){background:var(--lime)}
+.card .yr{font:800 3.2rem 'Bricolage Grotesque',sans-serif;letter-spacing:-.03em;margin-top:auto;opacity:.9}
+.card small{font-weight:500;font-size:.9rem}
+.card h3{font-size:1.7rem;margin:10px 0 8px}
+.card p{margin:0;font-size:1rem}
+.talents{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.talent{border-radius:20px;padding:26px 22px;min-height:150px;display:flex;align-items:flex-end;font:800 1.5rem/1.1 'Bricolage Grotesque',sans-serif;color:var(--on)}
+.talent:nth-child(1){background:var(--lime)}.talent:nth-child(2){background:var(--teal)}.talent:nth-child(3){background:var(--coral)}.talent:nth-child(4){background:var(--char);color:var(--light)}
+.hobbies{display:flex;flex-wrap:wrap;gap:12px}
+.hobbies span{padding:14px 26px;border-radius:999px;font-size:1.1rem;font-weight:500;color:var(--on)}
+.hobbies span:nth-child(3n+1){background:var(--teal)}.hobbies span:nth-child(3n+2){background:var(--coral)}.hobbies span:nth-child(3n){background:var(--lime)}
+.contact{background:var(--teal);color:var(--on)}
+.contact .wrap{display:flex;flex-direction:column;align-items:flex-start}
+.contact h2{font-size:clamp(2.6rem,8vw,6rem);margin-bottom:20px}
+.contact p{max-width:42ch;font-size:1.15rem;margin:0 0 32px}
+.contact .btn{background:var(--on);color:var(--light)}
+.contact .btn:hover{background:var(--coral);color:var(--on)}
+footer{padding:28px 0 40px;color:var(--muted);font-size:.9rem}
+
+/* animaciones */
+.js .rv{opacity:0;transform:translateY(32px);transition:opacity .7s cubic-bezier(.2,.7,.2,1),transform .7s cubic-bezier(.2,.7,.2,1);transition-delay:calc(var(--i,0)*90ms)}
+.js .rv.in{opacity:1;transform:none}
+@keyframes rise{from{opacity:0;transform:translateY(34px)}to{opacity:1;transform:none}}
+.hero .wrap>div:first-child>*{animation:rise .9s cubic-bezier(.2,.7,.2,1) both}
+.hero h1{animation-delay:.05s!important}.hero .lead{animation-delay:.22s!important}.hero .btn{animation-delay:.38s!important}.hero .btn.alt{animation-delay:.46s!important}
+@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-12px)}}
+@keyframes spin{to{transform:rotate(360deg)}}
+.art .b{animation:pop .6s cubic-bezier(.2,.8,.2,1) .08s both,float 5s ease-in-out .9s infinite}
+.art .c{animation:pop .6s cubic-bezier(.2,.8,.2,1) .16s both,float 6.5s ease-in-out 1.1s infinite reverse}
+.art .d{color:var(--light)}.art .wave{stroke-dasharray:260;animation:draw 3.4s ease-in-out infinite alternate}.art .tri{transform-origin:50% 50%;animation:spin 16s linear infinite}@keyframes draw{from{stroke-dashoffset:260}to{stroke-dashoffset:0}}
+nav ul a{position:relative;padding:4px 0}
+nav ul a::after{content:"";position:absolute;left:0;right:0;bottom:0;height:2px;background:var(--coral);transform:scaleX(0);transform-origin:left;transition:transform .3s cubic-bezier(.2,.7,.2,1)}
+nav ul a:hover::after,nav ul a:focus-visible::after{transform:scaleX(1)}
+.progress{position:absolute;left:0;right:0;bottom:-1px;height:3px;background:var(--coral);transform:scaleX(0);transform-origin:left}
+.btn:active{transform:scale(.96)}
+.card .yr{display:block;transition:transform .3s cubic-bezier(.2,.7,.2,1)}
+.card:hover .yr{transform:translateX(10px)}
+.talent{transition:transform .25s cubic-bezier(.2,.7,.2,1)}
+.talent:hover{transform:translateY(-6px) rotate(-1.5deg)}
+.hobbies span{transition:transform .2s cubic-bezier(.2,.7,.2,1)}
+.hobbies span:hover{transform:scale(1.08) rotate(-2deg)}
+.facts li{transition:padding-left .25s}.facts li:hover{padding-left:10px}
+@media (prefers-reduced-motion:reduce){.js .rv{opacity:1;transform:none}.progress{display:none}}
+
+.card{position:relative;overflow:hidden}
+.card .deco{position:absolute;inset:0;width:100%;height:100%;color:var(--on);opacity:.3;pointer-events:none;transition:transform .5s cubic-bezier(.2,.7,.2,1)}.card>*:not(.deco){position:relative;z-index:1}.card .spin{transform-origin:50% 50%;animation:spin 50s linear infinite}
+.card:hover .deco{transform:scale(1.07)}
+.card .dr{stroke-dasharray:400;animation:drawb 4s ease-in-out infinite alternate}@keyframes drawb{from{stroke-dashoffset:400}to{stroke-dashoffset:0}}
+.talent{position:relative;overflow:hidden}
+.tdeco{position:absolute;top:14px;right:16px;width:84px;height:64px;opacity:.7}
+.hobbies b{display:inline-block;margin-right:10px;font-weight:500;transition:transform .5s cubic-bezier(.2,.7,.2,1)}
+.hobbies span:hover b{transform:rotate(360deg)}
+.contact{position:relative;overflow:hidden}.contact .wrap{position:relative;z-index:1}
+.cdeco{position:absolute;right:-30px;top:50%;margin-top:-210px;width:420px;height:420px;color:var(--on);opacity:.22;pointer-events:none}
+.cdeco .sq{transform-origin:50% 50%;animation:spin 40s linear infinite}.cdeco .sq2{transform-origin:50% 50%;animation:spin 60s linear infinite reverse}
+#sobre-mi .wrap{position:relative}
+.about-deco{position:absolute;right:28px;top:-6px;width:84px;height:84px;color:var(--lime);opacity:.55}
+.about-deco .hx{transform-origin:50% 50%;animation:spin 30s linear infinite}
+@media (max-width:860px){.cdeco{width:260px;height:260px;margin-top:-130px;right:-90px;opacity:.16}}
+.cbtns{display:flex;gap:12px;flex-wrap:wrap}.contact .btn{max-width:100%;overflow-wrap:anywhere}.contact .btn.out{background:transparent;color:var(--on);box-shadow:inset 0 0 0 2px var(--on)}.contact .btn.out:hover{background:var(--lime);color:var(--on)}
+
+/* secciones a pantalla completa */
+:root{--sec:calc(100vh - 64px)}
+@supports (height:100svh){:root{--sec:calc(100svh - 64px)}}
+html{scroll-snap-type:y proximity;scroll-padding-top:calc(64px + env(safe-area-inset-top,0px))}
+.hero,main>section{min-height:var(--sec);display:flex;flex-direction:column;justify-content:center;scroll-snap-align:start}
+.hero>.wrap,main>section>.wrap{width:100%}
+main>section{padding:56px 0}.hero{padding:40px 0}
+#talentos{border-top:1px solid var(--line)}h2.sub{margin-top:56px}
+@media (min-width:861px) and (min-height:800px){.card{min-height:400px}.talent{min-height:210px}h2{margin-bottom:56px}}
+@media (min-width:1280px){.wrap{max-width:1180px}}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{animation:none!important;transition:none!important}}
+@media (max-width:860px){
+  nav ul{gap:18px;overflow-x:auto;scrollbar-width:none;margin-left:16px;min-width:0;white-space:nowrap}nav ul::-webkit-scrollbar{display:none}nav li{flex:none}nav b{flex:none}main>section{padding:48px 0}.hero{padding:32px 0}
+  .hero{padding:40px 0 56px}.hero .wrap,#sobre-mi .wrap{grid-template-columns:1fr;gap:36px}
+  .art{justify-self:start;max-width:300px}
+  section{padding:60px 0}
+  .projects{grid-template-columns:1fr}.card{min-height:240px}
+  .talents{grid-template-columns:1fr 1fr}
+  .btn.alt{margin:10px 0 0}
+}
+</style>
+<script>document.documentElement.classList.add("js")</script>
+</head>
+<body>
+<nav><div class="wrap"><b>Isaías</b>
+<ul><li><a href="#sobre-mi">Sobre mí</a></li><li><a href="#proyectos">Proyectos</a></li><li><a href="#talentos">Talentos</a></li><li><a href="#pasatiempos">Pasatiempos</a></li><li><a href="#contacto">Contacto</a></li></ul></div><div class="progress" id="progress"></div></nav>
+
+<header class="hero"><div class="wrap">
+  <div>
+    <h1>Hola, soy Isaías.</h1>
+    <p class="lead">Desarrollo proyectos donde convergen la tecnología, el diseño de bases de datos y la elegancia de las matemáticas.</p>
+    <a class="btn" href="#proyectos">Ver proyectos</a><a class="btn alt" href="#contacto">Escríbeme</a>
+  </div>
+  <div class="art" aria-hidden="true">
+    <div class="a"><svg viewBox="0 0 100 100"><g stroke="currentColor" stroke-opacity=".18" stroke-width="1"><path d="M25 0V100M50 0V100M75 0V100M0 25H100M0 50H100M0 75H100"/></g><text x="9" y="19" font-size="13" fill="currentColor" opacity=".55">π</text><text x="82" y="93" font-size="13" fill="currentColor" opacity=".55">∑</text></svg><span>PR</span></div>
+    <div class="b"><svg viewBox="0 0 100 100"><g stroke="currentColor" stroke-opacity=".35" stroke-width="1"><path d="M8 50H92M50 8V92"/></g><path class="wave" d="M10 50C22 8 38 8 50 50S78 92 90 50" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round"/></svg></div>
+    <div class="c"><svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-linecap="round"><path d="M20 100H100" stroke-width="2"/><path d="M100 100L34.5 54.1" stroke-width="2.5"/><path d="M34.5 54.1V100" stroke-width="1.5" stroke-dasharray="3 4"/><path d="M72 100A28 28 0 0 1 77.1 83.9" stroke-width="2"/><circle cx="34.5" cy="54.1" r="3.5" fill="currentColor" stroke="none"/><text x="58" y="92" font-size="10" fill="currentColor" stroke="none">θ</text></svg></div>
+    <div class="d"><svg viewBox="0 0 100 100" fill="none" stroke="#CBE07E" stroke-linejoin="round"><circle cx="50" cy="50" r="34" stroke-width="1.5" stroke-opacity=".6"/><polygon class="tri" points="50,16 79.4,67 20.6,67" stroke-width="2.5"/><text x="50" y="94" font-size="8" fill="#F2F2F2" stroke="none" text-anchor="middle">a²+b²=c²</text></svg></div>
+  </div>
+</div></header>
+
+<main>
+<section id="sobre-mi" class="dark"><div class="wrap"><svg class="about-deco" viewBox="0 0 100 100" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><g class="hx"><polygon points="90,50 70,84.6 30,84.6 10,50 30,15.4 70,15.4"/><path d="M50 15.4L70 84.6H30Z" stroke-opacity=".6"/></g><circle cx="50" cy="50" r="4" fill="currentColor"/></svg>
+  <div>
+    <h2>Sobre mí</h2>
+    <div class="about">
+      <p>Nací y crecí en Tuxtla Gutiérrez, la capital del estado de Chiapas, México. Desde siempre he sentido una gran fascinación por la resolución de problemas y la lógica, lo que me llevó a adentrarme en el mundo del desarrollo de software y las ciencias de la computación.</p>
+      <p>Actualmente cursando la carrera de ingeniería, perfecciono mis habilidades técnicas y me enfoco en áreas donde las matemáticas y el desarrollo tecnológico se potencian entre sí.</p><p>Lo que me impulsa día a día es colaborar en proyectos desafiantes e interesantes que me permitan aprender, innovar y crear un impacto positivo a través de la tecnología.</p>
+    </div>
+  </div>
+  <ul class="facts">
+    <li>Ubicación<span>Tuxtla Gutiérrez, Chiapas, México</span></li>
+    <li>Estudio<span>Ingeniería en Tecnologías de la Información e Innovación Digital (Software)</span></li>
+    <li>Idiomas<span>Español, francés</span></li><li>Lenguajes<span>C++, Java, Python</span></li>
+  </ul>
+</div></section>
+
+<section id="proyectos"><div class="wrap">
+  <h2>Proyectos</h2>
+  <div class="projects">
+    <article class="card"><small>Aplicación web (PWA)</small><h3>Law Pocket</h3><p>Plataforma web progresiva para la gestión integral y el almacenamiento seguro de expedientes jurídicos de abogados y despachos. Mi primer proyecto comercializado con éxito.</p><svg class="deco" viewBox="0 0 200 200" preserveAspectRatio="xMidYMid slice" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 175C50 5 150 5 180 175" class="dr" stroke-width="3"/><path d="M20 175L50 5M180 175L150 5" stroke-width="1.5" stroke-dasharray="4 6"/><path d="M15 120C70 190 130 40 195 80" stroke-opacity=".5"/><circle cx="20" cy="175" r="7" fill="currentColor"/><circle cx="180" cy="175" r="7" fill="currentColor"/><circle cx="50" cy="5" r="5"/><circle cx="150" cy="5" r="5"/></svg><span class="yr">2026</span></article>
+    <article class="card"><small>App móvil / EdTech</small><h3>Road Math</h3><p>Aplicación móvil que fortalece el aprendizaje de cálculo elemental y avanzado, guiando a los estudiantes por límites, derivadas e integrales.</p><svg class="deco" viewBox="0 0 200 200" preserveAspectRatio="xMidYMid slice" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><g class="spin"><rect x="15.0" y="15.0" width="170.0" height="170.0" transform="rotate(0 100 100)"/><rect x="26.9" y="26.9" width="146.2" height="146.2" transform="rotate(9 100 100)"/><rect x="37.1" y="37.1" width="125.7" height="125.7" transform="rotate(18 100 100)"/><rect x="45.9" y="45.9" width="108.1" height="108.1" transform="rotate(27 100 100)"/><rect x="53.5" y="53.5" width="93.0" height="93.0" transform="rotate(36 100 100)"/><rect x="60.0" y="60.0" width="80.0" height="80.0" transform="rotate(45 100 100)"/><rect x="65.6" y="65.6" width="68.8" height="68.8" transform="rotate(54 100 100)"/><rect x="70.4" y="70.4" width="59.1" height="59.1" transform="rotate(63 100 100)"/><rect x="74.6" y="74.6" width="50.9" height="50.9" transform="rotate(72 100 100)"/><rect x="78.1" y="78.1" width="43.7" height="43.7" transform="rotate(81 100 100)"/></g><circle cx="100" cy="100" r="3.5" fill="currentColor"/></svg><span class="yr">2026</span></article>
+    <article class="card"><small>Educación / Emprendimiento</small><h3>Tutorías privadas de matemáticas</h3><p>Enseñanza personalizada hasta cálculo integral, que une la pedagogía con herramientas tecnológicas interactivas como Road Math.</p><svg class="deco" viewBox="0 0 200 200" preserveAspectRatio="xMidYMid slice" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 20V180H192" stroke-width="2.5"/><path d="M20 60H192M20 100H192M20 140H192" stroke-width="1.2" stroke-dasharray="4 6"/><path class="dr" d="M24 174C80 172 140 140 184 36" stroke-width="3.5"/><circle cx="184" cy="36" r="8" fill="currentColor"/></svg><span class="yr">2026</span></article>
+  </div>
+</div></section>
+
+<section id="talentos"><div class="wrap" style="display:block">
+  <h2>Talentos</h2>
+  <div class="talents"><div class="talent"><svg class="tdeco" viewBox="0 0 84 70" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><g fill="currentColor" stroke="none" font-family="monospace" font-weight="700"><text x="2" y="28" font-size="24">&lt;/&gt;</text><text x="2" y="58" font-size="20" opacity=".6">1010</text></g></svg>Tecnología</div><div class="talent"><svg class="tdeco" viewBox="0 0 84 70" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><g fill="currentColor" stroke="none"><text x="4" y="56" font-size="56" font-family="serif" font-style="italic">∫</text><text x="38" y="32" font-size="15" font-family="serif">√x</text><text x="40" y="58" font-size="15" font-family="serif" opacity=".6">dx</text></g></svg>Matemáticas</div><div class="talent"><svg class="tdeco" viewBox="0 0 84 70" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M42 12L14 54M42 12V54M42 12L70 54"/><g fill="currentColor"><circle cx="42" cy="12" r="7"/><circle cx="14" cy="54" r="5.5"/><circle cx="42" cy="54" r="5.5"/><circle cx="70" cy="54" r="5.5"/></g></svg>Planificación estratégica</div><div class="talent"><svg class="tdeco" viewBox="0 0 84 70" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="30" cy="28" r="20"/><circle cx="52" cy="28" r="20"/><circle cx="41" cy="46" r="20"/></svg>Creatividad</div></div>
+  <h2 id="pasatiempos" class="sub">Pasatiempos</h2>
+  <div class="hobbies"><span><b aria-hidden="true">∑</b>Resolver problemas de matemáticas</span><span><b aria-hidden="true">◇</b>Jugar videojuegos</span><span><b aria-hidden="true">∿</b>Escuchar música</span><span><b aria-hidden="true">→</b>Correr</span><span><b aria-hidden="true">△</b>Hacer ejercicio</span></div>
+</div></section>
+
+<section id="contacto" class="contact"><svg class="cdeco" viewBox="0 0 200 200" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="100" cy="100" r="92"/><circle cx="100" cy="100" r="66"/><circle cx="100" cy="100" r="40"/><path d="M8 100H192M100 8V192" stroke-opacity=".5"/><rect class="sq" x="55" y="55" width="90" height="90"/><rect class="sq2" x="28" y="28" width="144" height="144" stroke-dasharray="4 6"/></svg><div class="wrap">
+  <h2>Hablemos.</h2>
+  <p>¿Tienes un proyecto o una idea? Escríbeme, me encantará colaborar.</p>
+  <div class="cbtns"><a class="btn" href="mailto:pablitoisaiasrodriguezcruz@gmail.com">pablitoisaiasrodriguezcruz@gmail.com</a><a class="btn out" href="https://www.instagram.com/isaias.r_c" target="_blank" rel="noopener">Instagram</a></div>
+</div></section>
+</main>
+<footer><div class="wrap">© 2026 Isaías</div></footer>
+<script>
+(function(){
+  var reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var bar=document.getElementById('progress');
+  function upd(){var h=document.documentElement.scrollHeight-innerHeight;bar.style.transform='scaleX('+(h>0?Math.min(scrollY/h,1):0)+')'}
+  addEventListener('scroll',upd,{passive:true});upd();
+  if(reduce||!('IntersectionObserver' in window))return;
+  var sel='#sobre-mi h2,.about p,.facts li,#proyectos h2,.card,#talentos h2,.talent,h2.sub,.hobbies span,.contact h2,.contact p,.contact .btn';
+  var els=[].slice.call(document.querySelectorAll(sel));
+  els.forEach(function(e){e.classList.add('rv');e.style.setProperty('--i',Math.min([].indexOf.call(e.parentElement.children,e),6))});
+  var io=new IntersectionObserver(function(list){list.forEach(function(x){if(!x.isIntersecting)return;var e=x.target;e.classList.add('in');io.unobserve(e);
+    e.addEventListener('transitionend',function f(ev){if(ev.propertyName!=='transform')return;e.classList.remove('rv','in');e.style.removeProperty('--i');e.removeEventListener('transitionend',f)})})},{threshold:.15});
+  els.forEach(function(e){io.observe(e)});
+})();
+</script>
+</body>
+</html>
